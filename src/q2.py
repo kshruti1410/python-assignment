@@ -1,7 +1,7 @@
 """ abc is a by default abrstract class present """
 
 from abc import ABC, abstractmethod
-# pylint: disable=missing-final-newline,unnecessary-pass,abstract-class-instantiated
+
 class Person(ABC):
 
     """ inherit ABC class """
