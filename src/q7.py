@@ -5,7 +5,8 @@ def extract_name(name):
     information = information.split('@')
     company_name = information[1]
     company_name = company_name.split('.')
-    print(company_name[0])
+    return company_name[0]
 
 EMAIL = input("Enter Email Address: ")
 extract_name(EMAIL)
+print(extract_name(EMAIL))

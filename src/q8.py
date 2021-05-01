@@ -1,8 +1,8 @@
   
 """ value is a empty list """
-class squareMap:
+def SQUARED_NUMBER():
     VALUE = []
     for number in range(1, 21):
         VALUE.append(number)
     SQUARED_NUMBER = map(lambda x: x**2, VALUE)
-    print(list(SQUARED_NUMBER))
+    return (list(SQUARED_NUMBER))

@@ -1,4 +1,5 @@
 import mysql.connector
+from mysql.connector import Error
 
 def execute_query_to_point_table():
     """"Execute sql query to  point employees table"""
@@ -22,7 +23,7 @@ def print_each_record_list_wise(many_records):
     """" printing one by one records from 10 records"""
     for record in many_records:
         print(list(record))
-if __name__ == "__main__":
+def sql_query():
     try:
         MY_DB = mysql.connector.connect(host="localhost", user="root", password="mysql", database="employees")
         MY_CURSOR = MY_DB.cursor()
